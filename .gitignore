@@ -1,5 +1,5 @@
 .pytest_cache
 venv
 .env
-data
+mongo_data
 **/__pycache__
