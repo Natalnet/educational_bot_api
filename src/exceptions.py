@@ -8,3 +8,6 @@ class TurmaAlreadyExists(Exception):
 
 class TurmaNotFound(Exception):
     pass
+
+class MinitesteNotFound(Exception):
+    pass

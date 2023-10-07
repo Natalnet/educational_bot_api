@@ -10,6 +10,6 @@ router = APIRouter(prefix='/perguntas', tags=['perguntas'])
 async def adicionar(pergunta: Pergunta):
     try:
         pergunta_service.adicionar(pergunta=pergunta)
-        return {'response': 'Question sucessfully registered'}
+        return {'response': 'Pergunta registrada com sucesso'}
     except Exception:
         raise HTTPException(status.HTTP_400_BAD_REQUEST, detail='Missing information')

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.routers import admin, pergunta, aluno, turma
+from src.routers import admin, pergunta, aluno, turma, miniteste
 from src.data.mongodb import connection
 
 app = FastAPI()
@@ -21,3 +21,5 @@ app.include_router(admin.router)
 app.include_router(aluno.router)
 
 app.include_router(turma.router)
+
+app.include_router(miniteste.router)
