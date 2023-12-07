@@ -1,15 +1,15 @@
 
 
-serve:
-	@uvicorn main:app --reload
+serve api:
+	@uvicorn api.main:app --reload
 
-dbup:
+db up:
 	@docker-compose up -d
 
-dbdown:
+db down:
 	@docker-compose down
 
-dbin:
+db in:
 	@docker exec -it mongodb bash
 
 testing:
